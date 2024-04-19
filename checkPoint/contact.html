@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites Menu - David HTML Project 2</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/checkPoint/Images/Favicon.png" />
+    <style>
+        footer {
+            text-align: center; /* Footer alligned at the center*/
+            padding: 3px;
+            background-color: DarkSalmon;
+            color: white;
+            margin-top: 50px;
+        }
+
+        header {
+            text-align: center;
+            padding: 3px;
+            background-color: DarkSalmon;
+            color: white;
+            text-decoration: none;
+        }
+
+        .submit {
+            background-color: rgb(147, 235, 167);
+            border-radius: 8px;
+            margin-left: 30px;
+            margin-right: 20px;
+            padding: 7px 15px;
+        }
+
+        .submit:hover {
+            background-color: rgb(18, 230, 67);
+            color: white;
+            font-weight: bold;
+        }
+
+        .reset {
+            background-color: rgb(223, 151, 157);
+            border-radius: 8px;
+
+            padding: 7px 15px;
+        }
+
+        .reset:hover {
+            background-color: rgb(230, 60, 18);
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header with the Menu-->
+    <header>
+        <nav>
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="./contact.html">Contact</a>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <!-- Form Header-->
+    <div>
+        <h4>Fill This Form With The <span style="color: red;">Required</span> Information</h4>
+    </div>
+    <!-- Adding Form Element-->
+    <form>
+        <div>
+            <label for="fname"><b>FirstName</b></label>
+            <input type="text" size="50" required>
+        </div>
+        <br>
+        <div>
+            <label for="lname"><b>LastName</b></label>
+            <input type="text" size="50" required>
+        </div>
+        <br>
+        <div>
+            <label for="address"><b>Address</b></label>
+            <input type="text" size="52" required>
+        </div>
+        <br>
+        <div>
+            <label for="email"><b>Email</b></label>
+            <input type="email" size="54" required>
+        </div>
+
+        <div>
+            <h4>Select Menu:</h4>
+            <label for="menu"></label>
+            <select name="menu" style="height: 10%; width: 30%; " multiple required>
+                <option value="Burger">Burger</option>
+                <option value="Fries">Fries</option>
+                <option value="Pancakes">Pancakes</option>
+                <option value="Smoothie">Smoothie</option>
+            </select>
+        </div>
+
+        <div>
+            <h4>Payment Method:</h4>
+            <input type="radio" name="payment" required />
+            <label for="payment1">Pay With Credit Card</label>
+            <br>
+            <input type="radio" name="payment" />
+            <label for="payment2">Pay On Delivery</label>
+        </div>
+        <br>
+        <div>
+            <textarea placeholder="Enter message here..." cols="58" rows="5"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" required />
+            <label for="terms"><i>I agree to <b>David's Burger Place</b> term's and conditions</i></label>
+        </div>
+        <br>
+        <div>
+            <button class="submit">Submit</button>
+            <button class="reset">Reset</button>
+        </div>
+
+    </form>
+
+    <!-- Footer -->
+    <footer>
+        <p>Author: David Arinze<br>
+            <a href="mailto:hege@example.com">david.nwankwo99@gmail.com</a>
+        </p>
+    </footer>
+</body>
+
+</html>
